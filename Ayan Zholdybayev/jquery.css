@@ -8,7 +8,7 @@ section{
 .menu-btn{
     width: 50px;
     height: 50px;
-    background-color: #c4c4c4;
+    background-color: blue;
     border-radius: 50%;
 }
 span,
@@ -44,4 +44,20 @@ span::after{
 }
 .menu-btn_active span{
     transform: rotate(-45deg);
+}
+
+.jq__prac{
+    background-color: red;
+    display: inline;
+}
+
+#fade{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+#fadeFull{
+    background-color: red;
+    width: 50px;
+    height: 50px;
 }

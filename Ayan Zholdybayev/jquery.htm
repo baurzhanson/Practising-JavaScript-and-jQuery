@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Jquery</title>
-    <link src="jquery.css" rel = "stylesheet">
+    <link href="jquery.css" rel = "stylesheet">
     <script src = "jquery.min.js"></script> 
 </head>
 <body>
@@ -18,5 +18,22 @@
             $(this).toggleClass("menu-btn_active");
         })
     </script>
+   
+    <div class = "jq__prac">
+        <p> Button Above is called as Burger Button </p>  <br>
+        <button> Now we are going to use our buttons </button>
+    <div id = "fade"></div>
+    <div id = "fadeFull"></div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+       //         $("#fade").fadeToggle();
+                $("#fadeFull").fadeTo(1000, 0.1);
+            });
+        });
+   
+   </script>
+       
 </body>
 </html>
