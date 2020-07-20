@@ -24,8 +24,9 @@
         <button id = "naruto"> Kagi Bunshin No Jutsu </button> </br>
         <button id = "sakura"> Kawarimi No Jutsu </button> </br>
         <button id = "jiraya"> Gama Kuchiyose No Jutsu </button> </br>
+        <button id = "tsunade"> Taijutsu </button> </br>
   <!--  <div id = "slip">Hello, Ayan! Nice to meet you!</div> -->
-    <div id = "fade"></div>
+    <div id = "fade">Hello</div>
     <div id = "fadeFull"></div>
     </div>
     <script>
@@ -45,11 +46,19 @@
                 });
             }); 
             $("#sakura").click(function(){
-                $("#fade").animate({
-                    width: "toggle"
+            var div = $("#fade"); 
+                div.animate ({height:"300px", opacity:"0.4"}, "slow");
+                div.animate ({width:"300px", opacity:"0.8"}, "slow");
+                div.animate ({height:"100px", opacity:"0.4"}, "fast");
+                div.animate ({width:"100px", opacity:"0.8"}, "fast");
+           
+            });   
+            $("#tsunade").click(function(){
+                var div = $("#fade");
+                    div.animate({left: "100px"}, "slow");
+                    div.animate({width: "1000px"}, "slow");
+                    div.animate({fontSize: "30px"}, "slow");
                 });
-            });
-
         });
    
    </script>
