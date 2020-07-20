@@ -20,20 +20,36 @@
     </script>
    
     <div class = "jq__prac">
-        <p> Button Above is called as Burger Button </p>  <br>
-        <button> Now we are going to use our buttons </button>
-    
-    <div id = "slip">Hello, Ayan! Nice to meet you!</div>
+  <!--      <p> Button Above is called as Burger Button </p>  <br> -->
+        <button id = "naruto"> Kagi Bunshin No Jutsu </button> </br>
+        <button id = "sakura"> Kawarimi No Jutsu </button> </br>
+        <button id = "jiraya"> Gama Kuchiyose No Jutsu </button> </br>
+  <!--  <div id = "slip">Hello, Ayan! Nice to meet you!</div> -->
     <div id = "fade"></div>
     <div id = "fadeFull"></div>
     </div>
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
-       //         $("#fade").fadeToggle();
+            $("#naruto").click(function(){
+                $("#fade").animate({
+                    left: "150px",   });
         //      $("#fadeFull").fadeTo(1000, 0.1);
-               $("#slip").slideToggle("slow");
+       //        $("#slip").slideToggle("slow");
+            
             });
+            $("#jiraya").click(function(){
+                $("#fade").animate({
+                    left: '250px',
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+            }); 
+            $("#sakura").click(function(){
+                $("#fade").animate({
+                    width: "toggle"
+                });
+            });
+
         });
    
    </script>
