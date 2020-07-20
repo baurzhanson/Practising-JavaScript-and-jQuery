@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Jquery</title>
+    <link src="jquery.css" rel = "stylesheet">
     <script src = "jquery.min.js"></script> 
 </head>
 <body>
-    
+    <section>
+        <a href = "#" class = "menu-btn">
+            <span></span>
+        </a>
+    </section>
+    <script>
+        $(".menu-btn").on("click",function(e){
+            e.preventDefault;
+            $(this).toggleClass("menu-btn_active");
+        })
+    </script>
 </body>
 </html>
