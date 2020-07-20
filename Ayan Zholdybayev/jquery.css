@@ -61,3 +61,10 @@ span::after{
     width: 50px;
     height: 50px;
 }
+
+#slip{
+        background-color: greenyellow;
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+    }

@@ -22,6 +22,8 @@
     <div class = "jq__prac">
         <p> Button Above is called as Burger Button </p>  <br>
         <button> Now we are going to use our buttons </button>
+    
+    <div id = "slip">Hello, Ayan! Nice to meet you!</div>
     <div id = "fade"></div>
     <div id = "fadeFull"></div>
     </div>
@@ -29,7 +31,8 @@
         $(document).ready(function(){
             $("button").click(function(){
        //         $("#fade").fadeToggle();
-                $("#fadeFull").fadeTo(1000, 0.1);
+        //      $("#fadeFull").fadeTo(1000, 0.1);
+               $("#slip").slideToggle("slow");
             });
         });
    
